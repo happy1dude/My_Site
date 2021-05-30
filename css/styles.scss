@@ -300,6 +300,14 @@ body {
             .text-about {
                 margin: 0;
                 width: 90%;
+
+                .my_resume {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    background-color: #ea7638;
+                    color: #fff;
+                    border-radius: 5px;
+                }
             }
 
             .img-wrap {

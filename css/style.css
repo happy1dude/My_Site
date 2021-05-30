@@ -570,6 +570,13 @@ body {
   margin: 0;
   width: 90%;
 }
+.section-about .section-inner__content .text-about .my_resume {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ea7638;
+  color: #fff;
+  border-radius: 5px;
+}
 .section-about .section-inner__content .img-wrap {
   margin-right: 25px;
   width: 20%;
