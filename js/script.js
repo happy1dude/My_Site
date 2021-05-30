@@ -23,7 +23,7 @@ window.onscroll = () => {
     const homeButt = document.getElementById('home-icon');
     const scrollUp = document.querySelector('.scroll-up');
 
-    if (window.pageYOffset > canvas.offsetHeight) {
+    if (window.pageYOffset > canvas.offsetHeight - 1) {
         header.classList.add('list-scroll');
         homeButt.classList.add('home-page--active');
         scrollUp.classList.add('scroll-up--active');
