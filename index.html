@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mazalov NIkita</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -17,16 +18,32 @@
         <div class="section-inner">
             <div class="section-header-content">
                 <div class="section-header-wrapper">
-                    <div class="section-header-wrapper__title">Мазалов Никита</div>
-                    <div class="section-header-wrapper__subtitle">Я  <font class='jun-color'>Junior Frontend-developer</font>. Мне 25 лет. Горю разработкой и стремлюсь стать профессионалом в этом деле!</div>
+                    <div class="section-header-wrapper__title">
+                        <p>Мазалов Никита</p>
+                    </div>
+                    <div class="section-header-wrapper__subtitle">
+                        <p>Я  <font class='jun-color'>Junior Frontend-developer</font>. Мне 25 лет. Горю разработкой и стремлюсь стать профессионалом в этом деле!
+                        </p>
+                    </div>
                 </div>
-            </div>           
+            </div>     
+            <!-- navigation -->
+            <nav id="navigation" class="section-nav">
+                <ul id="navigation-ul" class="list">
+                    <li id='home-icon' class="home-page"><a href="#canvas"><img width="27" height="27" src="img/home.svg" alt=""></a></li>
+                    <li class='item'><a href="#about" class="link">Обо мне</a></li>
+                    <li class='item'><a href="#example" class="link">Мои работы</a></li>
+                    <li class='item'><a href="#contact" class="link">Контакты</a></li>
+                </ul>
+
+            </nav>
+            <!--/ navigation -->      
         </div>
     </section>
     <!-- / header -->
 
     <!-- navigation -->
-    <nav id="navigation" class="section-nav">
+    <!-- <nav id="navigation" class="section-nav">
         <ul id="navigation-ul" class="list">
             <li id='home-icon' class="home-page"><a href="#canvas"><img width="27" height="27" src="img/home.svg" alt=""></a></li>
             <li class='item'><a href="#about" class="link">Обо мне</a></li>
@@ -34,7 +51,7 @@
             <li class='item'><a href="#contact" class="link">Контакты</a></li>
         </ul>
 
-    </nav>
+    </nav> -->
     <!--/ navigation -->
 
     <!-- about -->
@@ -43,28 +60,39 @@
             <div class="section-inner__title">Обо <font class='color-me'>мне</font></div>
             <div class="section-inner__content">
                 <img class="img-wrap" src="img/iam-02.svg" width="500" height="250" alt="Моё фото">
-                <p class="text-about">Начал свой путь с курса "Full-stack веб-разработчик на Python" в SkillFactory. И что бы показать свои навыки и умения я сверстал этот лэндинг&#128522 <br>Решил связать свою жизнь с разработкой, потому что всегда имел к этому интерес. Люблю, когда виден результат работы. Открыт новому, хочу и готов много учиться.</p>
+                <div class="text-wrap-aboute text-about">
+                    <p>Начал свой путь с курса "Full-stack веб-разработчик на Python". Сейчас работаю в компании ООО "Веб-технолгии" на позиции <font style="color: #ea7638;">Junior Frontend-разработчик\верстальщик.</font> <br>
+                    Верстаю лэндинги, вношу правки уже в существующие страницы. Разрабатываю клиентскую логику на JS и занимаюсь разработкой интерфейсных компонентов. Создаю виджеты, таймеры, счётчики и т.д Занимаюсь вёрсткой popup'ов, и их появление при разных событиях(js).
+                    </p>
+                    <p>Некоторые из используемых технологий: <span style="font-weight: bold;">JavaScript, SASS, HTML, CSS, и другие.</span> </p>
+                    <p>Сейчас изучаю react и react native.</p>
+                </div>
+                
         </div>
     </section>
     <!-- / about -->
     
     <!-- examples -->
     <section id="example" class="section-exampl">
-        <div class="section-exampl__title">
-            <p class="example-title"><font class="examp-color">Мои</font> работы</p>
-        </div>
-        <div class="container">
+        <div class="section-inner">
+            <div class="section-exampl__title">
+                <p class="example-title"><font class="examp-color">Мои</font> работы</p>
+            </div>
+            <div class="container">
              <div class="card">
                  <div class="face face1">
                      <div class="content">
                          <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
-                         <h3>Лендинг</h3>
+                         <h3>Лендинги</h3>
                      </div>
                  </div>
                  <div class="face face2">
-                     <div class="content">
-                         <p>Сверстал лендинг по макету. </p>
-                             <a href="https://happy1dude.github.io/skillfactory-module3-MazalovN/index.html">Посмотреть</a>
+                     <div class="content content-wrap">
+                         <!-- <p>Сверстал лендинг по макету. </p> -->
+                             <a href="https://happy1dude.github.io/tz_albaweb/">Работа 1</a>
+                             <a href="https://happy1dude.github.io/tz_schneider-consult/">Работа 2</a>
+                             <a href="https://happy1dude.github.io/qsoft_tz/">Работа 3</a>
+                             <a href="https://happy1dude.github.io/tz_sibers/">Работа 4</a>
                      </div>
                  </div>
              </div>
@@ -96,7 +124,8 @@
                      </div>
                  </div>
              </div>
-         </div>    
+            </div>
+        </div>    
     </section>
     <!-- / examples -->
 

@@ -1,6 +1,7 @@
 // Прокрутка якорей
 const anchors = document.querySelectorAll('a[href*="#"]');
 
+
 for (let anchor of anchors) {
     anchor.addEventListener('click', (event) => {
         event.preventDefault();
@@ -15,12 +16,14 @@ for (let anchor of anchors) {
 
 
 // Прилипающая шапка и scroll up
+const canvas = document.getElementById('canvas');
+
 window.onscroll = () => {
     const header = document.querySelector('.list');
     const homeButt = document.getElementById('home-icon');
     const scrollUp = document.querySelector('.scroll-up');
 
-    if (window.pageYOffset > 850) {
+    if (window.pageYOffset > canvas.offsetHeight) {
         header.classList.add('list-scroll');
         homeButt.classList.add('home-page--active');
         scrollUp.classList.add('scroll-up--active');
